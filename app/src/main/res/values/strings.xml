@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Juego De Memoria</string>
+    <string name="label_tiempo">Tiempo para memorizar : </string>
+    <string name="label_chronometro_2_seg">2000</string>
+</resources>

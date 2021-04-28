@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.nac1.View.MainActivity">
+
+
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            tools:ignore="MissingConstraints">
+
+    <TextView
+            android:text="Timer:"
+            android:paddingVertical="40sp"
+            android:paddingLeft="30sp"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+             />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timerText"
+            android:layout_marginLeft="20sp"
+            android:textSize="25sp"
+            android:text="00 : 00 : 00"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START"
+            android:id="@+id/startStopButton"
+            android:background="@null"
+            android:textSize="30sp"
+            android:layout_gravity="end"
+            android:onClick="startStopTapped"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <GridView
+                    android:id="@+id/grid_main_cards"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="20sp"
+                    android:layout_width="match_parent"
+                    android:numColumns="4"
+                    android:layout_marginTop="100dp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="1" />
+        </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
